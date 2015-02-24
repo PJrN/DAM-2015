@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3</title>
+
+</head>
+
+    <body>
+    <h1> Rellena tu CV </h1>
+        <form action="ejercicio4.php" method="post">
+            Nombre:</br><input type="text" name="nombre"></br>
+            Apellido:</br><input type="text" name="apellido"></br>
+            Contrase&ntilde;a:</br><input type="password" name="password"></br>
+            DNI:</br><input type="number" name="number"></br>
+            Sexo:</br>
+            <input type="radio" name="sexo" value="Hombre" name="Hombre"> Hombre</br>
+            <input type="radio" name="sexo" value="Mujer"  name="Mujer" checked> Mujer</br>
+            Incluir mi foto<input type="file" name="file" accept="image/x-png">seleccionado</br>
+<textarea name="texto"></textarea></br>
+<input type="checkbox" checked="true" value="1">Subscribirse al boletin de novedades </br>
+
+<input type="submit" name="guardar" value="Guardar Cambios">
+<input type="reset" name="borrar" value="Borrar los datos introducidos">
+        </form>
+    </body>
+</html>
