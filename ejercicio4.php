@@ -1,5 +1,5 @@
 <?php
 echo 'Datos Recibidos';
-$nombre = $_POST["nombre"];
+$nombre = $_REQUEST["nombre"];
 echo $nombre;
 ?>
