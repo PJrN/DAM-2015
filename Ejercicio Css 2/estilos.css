@@ -20,17 +20,23 @@ span.especial { color: purple; }
 /*  */
 caption {color: blue}
 
+/*  */
 table, th, td {
    border: 1px solid black;
 }
 
+/*  */
 th {color:red}
 th.especial {color: orange}
 
+/*  */
 td {color: green}
 
+/*  */
 #adicional {color: #A5DF00}
-
 #adicional span {color:pink}
-
 #adicional a {color: green}
+
+/*  */
+span.destacado {color: orange}
+span.especial {color: purple}
