@@ -1,0 +1,81 @@
+/* XHTML y CSS con AMAYA
+   Bartolomé Sintes Marco
+   http://www.mclibre.org
+
+   CSS ejercicio: Diseño de listas 2
+   13 de marzo de 2003
+*/
+
+body { 
+  background-color: #F7F2F3; 
+  font-family: sans-serif;
+}
+
+hr { 
+  clear: both; 
+}
+
+ul { 
+  list-style-type: none; 
+  margin: 0px; 
+  padding: 0px; 
+}
+
+li { 
+  background-color: #C29BC2; 
+  color: #E8D9E8;  
+  font-weight: bold;
+  margin: 0px 10px 10px 0px; /* Hueco entre puntos */  
+}
+
+li li {  
+  background-color:#E8D9E8; 
+  color:#C29BC2; 
+  font-weight:normal;
+  margin: 0px; /* Hueco entre subptos, del color de fondo del pto */ 
+  padding: 0px 5px;
+}
+
+/* Todo seguido en horizontal (No queda bien en Mozilla) */
+ul.todoseguido, ul.todoseguido ul {
+  display: inline; 
+}
+
+ul.todoseguido li { 
+  padding-left: 5px; 
+  display: inline; 
+}
+
+/* Puntos en vertical y subpuntos en vertical */
+ul.vertvert, ul.vertvert ul {
+  width: 13em; /* Anchura de la lista */  
+}
+
+ul.vertvert li {
+  margin-right: 0px; /* Hace falta en Mozilla */
+}
+
+/* Puntos en horizontal y subpuntos en horizontal */
+ul.horihori li { 
+  float: left; 
+  text-align: center;
+}
+
+/* Puntos en vertical y subpuntos en horizontal */
+ul.verthori li {
+  clear: both; 
+  float: left; 
+}
+
+ul.verthori li ul li {
+  clear: none; 
+}
+
+/* Puntos en horizontal y subpuntos en vertical*/
+ul.horivert li { 
+  float: left; 
+} 
+
+ul.horivert li ul li { 
+  float: none; 
+}
