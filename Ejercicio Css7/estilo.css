@@ -23,10 +23,10 @@ div .titulo{
 
 div .center {
     position: absolute;
-    top: 30%;
-    left: 30%;
-    width: 40%;
-    height: 40%;
+    top: 35%;
+    left: 35%;
+    width: 35%;
+    height: 35%;
     border: 1px double green;
     background-color: #CCFF99;
     font-size: 2em;
@@ -37,8 +37,8 @@ div .izqarriba {
     position: absolute;
     top: 20%;
     left: 5%;
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
     border: 1px double yellow;
     background-color: #FFFF99;
     font-size: 2em;
@@ -48,8 +48,8 @@ div .derarriba {
     position: absolute;
     top: 20%;
     right: 5%;
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
     border: 1px double blue;
     background-color: #CCFFFF;
     font-size: 2em;
@@ -59,8 +59,8 @@ div .izqabajo {
     position: absolute;
     top: 60%;
     left: 5%;
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
     border: 1px double purple;
     background-color: #CCCCFF;
     font-size: 2em;
@@ -70,8 +70,8 @@ div .derabajo {
     position: absolute;
     top: 60%;
     right: 5%;
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
     border: 1px double red;
     background-color: #FF6666;
     font-size: 2em;
