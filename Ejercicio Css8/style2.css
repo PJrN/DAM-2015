@@ -45,13 +45,15 @@ a:hover {text-decoration:underline; color:#CEE3F6; } /*Mause sobre el link*/
 }
 
 .menu {
+    position: relative;
     float:left;
-    left:50%;
-    position:relative;
+    left:20%;
+    width: 60%;
     padding: 0;  
 }
 
 .menu li {
+   
     /* mostrar en línea */
     display: inline;
     /* borde */
@@ -66,7 +68,7 @@ a:hover {text-decoration:underline; color:#CEE3F6; } /*Mause sobre el link*/
     background-color: white;
     float:left;
     position: relative;
-    right:50%;
+    
 }
 
 .menu ul {
