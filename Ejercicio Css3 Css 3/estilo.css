@@ -1,0 +1,21 @@
+ .offset { overflow: hidden; margin: 20px 0 40px 20px; }
+        
+        .offset div {
+            background-color: #eee;
+            float:left;
+            margin-top: 20px;
+            margin-right: 40px;
+            height: 65px;
+            width:160px;
+            text-align: center;
+        }
+        
+        .examplelabelboxshadow {
+            color: #888;
+            font-size: 20px;
+            position: relative;
+            top: 20px;
+          
+            box-shadow: 10px 10px #888, -10px -10px #f4f4f4, 0px 0px 5px 5px #cc6600;
+
+        }
