@@ -3,6 +3,7 @@
         .offset div {
             background-color: #eee;
             float:left;
+            width: 100%
             margin-top: 20px;
             margin-right: 40px;
             height: 65px;
@@ -10,12 +11,14 @@
             text-align: center;
         }
         
-        .examplelabelboxshadow {
-            color: #888;
+        .exampleboxshadowa {
+            
             font-size: 20px;
             position: relative;
             top: 20px;
-          
-            box-shadow: 10px 10px #888, -10px -10px #f4f4f4, 0px 0px 5px 5px #cc6600;
-
+            box-shadow: -7px -7px 5px 0px rgba(50, 50, 50, 0.75);
         }
+
+
+
+ http://css3gen.com/box-shadow/ 
