@@ -1,0 +1,62 @@
+
+        #container { 
+            
+            width: 500px; height:500px; 
+        
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 20px;
+            position:absolute;
+            padding: 5px;
+            
+          
+        }
+        .box:hover {
+            width: 50px;
+            height: 50px;
+           
+            background-color: blue;
+            color: yellow;
+            font-size: 18px;
+            position:absolute;
+            
+            
+            
+            
+        }
+        .ex01 .box {
+            left: 10px;
+            top: 10px;
+            transition-property: all;
+            transition-delay:1S;
+            transition-duration: 3s, 3s, 3s;
+        }
+
+.ex01 .box:hover{
+    left: 400px;
+    -webkit-transform:translateX(450px);
+    -webkit-transform: rotateZ(-90deg);
+}
+
+        .ex02 .box {
+            left: 10px;
+            top: 130px;
+            transition-delay:1S;
+            transition-duration: 3s;
+        }
+        .ex03 .box {
+            left: 10px;
+            top: 250px;
+            transition-delay:1S;
+            transition-duration: 3s;
+        }
+        .ex04 .box {
+            left: 10px;
+            top: 370px;
+            transition-delay:1S;
+            transition-duration: 3s;
+        }
