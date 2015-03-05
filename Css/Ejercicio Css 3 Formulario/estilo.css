@@ -1,0 +1,7 @@
+p label {font-size: small}
+span {font-weight: bold;}
+.titulo {color: red}
+div {
+    float: left; width: 50%; margin: 0;
+}
+hr { width: 100%}
