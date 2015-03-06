@@ -23,13 +23,23 @@
          <p>Clave:<input class="centrado" type="password" name="clavepiso" maxlength="10" tabindex="4"></p>
             <hr>
          <h2>Registra tu piso</h2>
+            <div class="hidden" onclick="mostrar()">
          <p>Nombre:<input class="centrado" type="text" name="nombre" maxlength="10" autofocus tabindex="1"><span class="requerido">*</span></p>
          <p>Clave:<input class="centrado" type="password" name="clave" maxlength="10" tabindex="2"><span class="requerido">*</span></p>
-        
+            </div>
         </div>
     </section>
     <footer>
         beYourFlat &copy 2015, todos los derechos reservados.
     </footer>
+   
+    <script>
+function mostrar() {
+    var elemento = document.getElementsByClassName("hidden");
+    if (elemento.className == "hidden") {
+      elemento.className = "nohidden";
+    }
+}
+</script>
 </body>
 </html>

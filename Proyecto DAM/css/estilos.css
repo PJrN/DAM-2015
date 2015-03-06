@@ -135,15 +135,20 @@ footer {
     /* Crear Piso */
   
   
-    .centrado{
+.centrado{
   display:block;
   margin-left: auto;
   margin-right: auto;
 }
-   .requerido {color: red}
+
+.requerido {color: red}
     
 }
 
 .hidden {
 visibility: hidden;
+}
+
+.nohidden {
+visibility: visible;
 }
