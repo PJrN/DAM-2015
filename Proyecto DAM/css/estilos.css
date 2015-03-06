@@ -16,6 +16,14 @@ body {
 header{
 text-align: center;
 }
+    
+div.logo {
+    position: relative;
+    left: 20%;
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/logo.png);
+}
 
 h1 {
     font-family: fantasy, sans-serif; 
