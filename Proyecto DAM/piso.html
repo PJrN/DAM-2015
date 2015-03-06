@@ -11,7 +11,6 @@
 </head>
  
 <body>
-    <div class="logo"></div>
     <header>
        <h1>beYourFlat</h1>
     </header>
@@ -21,25 +20,24 @@
         <h2>Login</h2>
          <p>Usuario:<input class="centrado" type="text" name="usuario" maxlength="10" autofocus tabindex="3"></p>
          <p>Clave:<input class="centrado" type="password" name="clavepiso" maxlength="10" tabindex="4"></p>
+            <input class="centrado" type="submit" name="registrar" value="Registrar">
+            
             <hr>
-         <h2>Registra tu piso</h2>
-            <div class="hidden" onclick="mostrar()">
-         <p>Nombre:<input class="centrado" type="text" name="nombre" maxlength="10" autofocus tabindex="1"><span class="requerido">*</span></p>
-         <p>Clave:<input class="centrado" type="password" name="clave" maxlength="10" tabindex="2"><span class="requerido">*</span></p>
+            
+<form action="#" method="post">
+         <h2 onclick="javascript:mostrar()">Registra tu piso</h2>
+            <div id="oculto" class="hidden">
+                <p>Nombre:<span class="requerido">*</span><input class="centrado" type="text" name="nombre" maxlength="10" autofocus tabindex="1"></p>
+                <p>Clave:<span class="requerido">*</span><input class="centrado" type="password" name="clave" maxlength="10" tabindex="2"></span></p>
+                <input class="centrado" type="submit" name="registrar" value="Registrar">
             </div>
+</form>
+    
         </div>
     </section>
     <footer>
         beYourFlat &copy 2015, todos los derechos reservados.
     </footer>
-   
-    <script>
-function mostrar() {
-    var elemento = document.getElementsByClassName("hidden");
-    if (elemento.className == "hidden") {
-      elemento.className = "nohidden";
-    }
-}
-</script>
+           <script src="js/funciones.js"></script>
 </body>
 </html>

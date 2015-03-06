@@ -141,9 +141,11 @@ footer {
   margin-right: auto;
 }
 
-.requerido {color: red}
-    
+.requerido {
+    color: red;
 }
+    
+
 
 .hidden {
 visibility: hidden;
@@ -152,3 +154,6 @@ visibility: hidden;
 .nohidden {
 visibility: visible;
 }
+    
+    
+    }
