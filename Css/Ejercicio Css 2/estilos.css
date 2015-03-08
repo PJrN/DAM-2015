@@ -1,43 +1,83 @@
 /* Todos los elementos de la pagina h1, h2, h3 ... */
-h1 { color: green; }
-h2 { color: blue; }
 
-/* Todos los parrafos de la pagina */
-p strong { color: red; }
-
-/* Todos los párrafos contenidos en #primero */
-#destacado span { color: orange; }
-
-/* Todos los enlaces la pagina */
-a { color: red; text-decoration: underline }
-
-/* Los elementos "em" contenidos a */
-a em { color: blue; }
-
-/* Todos los elementos "em" de clase "especial" en toda la pagina */
-span.especial { color: purple; }
-
-/*  */
-caption {color: blue}
-
-/*  */
-table, th, td {
-   border: 1px solid black;
+h1 {
+    color: green;
 }
 
-/*  */
-th {color:red}
-th.especial {color: orange}
+h2 {
+    color: blue;
+}
+/* Todos los parrafos de la pagina */
 
-/*  */
-td {color: green}
+p strong {
+    color: red;
+}
+/* Todos los párrafos contenidos en #primero */
 
-/*  */
-#adicional {color: #A5DF00}
-#adicional span {color:pink}
-#adicional a {color: green}
+#destacado span {
+    color: orange;
+}
+/* Todos los enlaces la pagina */
 
-/*  */
-span.destacado {color: orange}
-span.especial {color: purple}
+a {
+    color: red;
+    text-decoration: underline
+}
+/* Los elementos "em" contenidos a */
 
+a em {
+    color: blue;
+}
+/* Todos los elementos "em" de clase "especial" en toda la pagina */
+
+span.especial {
+    color: purple;
+}
+/*  */
+
+caption {
+    color: blue
+}
+/*  */
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+/*  */
+
+th {
+    color: red
+}
+
+th.especial {
+    color: orange
+}
+/*  */
+
+td {
+    color: green
+}
+/*  */
+
+#adicional {
+    color: #A5DF00
+}
+
+#adicional span {
+    color: pink
+}
+
+#adicional a {
+    color: green
+}
+/*  */
+
+span.destacado {
+    color: orange
+}
+
+span.especial {
+    color: purple
+}

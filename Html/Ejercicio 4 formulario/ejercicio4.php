@@ -1,5 +1,1 @@
-<?php
-echo 'Datos Recibidos';
-$nombre = $_REQUEST["nombre"];
-echo $nombre;
-?>
+<?php echo 'Datos Recibidos'; $nombre=$ _REQUEST[ "nombre"]; echo $nombre; ?>

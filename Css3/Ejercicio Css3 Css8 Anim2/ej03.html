@@ -1,94 +1,120 @@
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
     "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="es">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Ejercicio 3 - Animacion CSS</title>
-        <style type="text/css" media="screen">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ejercicio 3 - Animacion CSS</title>
+    <style type="text/css" media="screen">
+        /*Accion de movimiento */
+        
+        @-webkit-keyframes orientacion {
+            from {
+                top: -10px;
+            }
+            to {
+                top: 480px;
+            }
+        }
+        /*Accion de los copos */
+        
+        @-webkit-keyframes copos {
+            /*  */
             
-            
-            /*Accion de movimiento */
-            @-webkit-keyframes orientacion{
-                    from {top: -10px;}
-                    to {top: 480px;}
-                }
-            
-             /*Accion de los copos */
-            @-webkit-keyframes copos{
-                /*  */
-		      0%   { -webkit-transform: rotate(-180deg) translate(0px, 0px);}
-		      100% { -webkit-transform: rotate(180deg) translate(10px, 75px);}
-            
+            0% {
+                -webkit-transform: rotate(-180deg) translate(0px, 0px);
+            }
+            100% {
+                -webkit-transform: rotate(180deg) translate(10px, 75px);
+            }
             /* opacidad */
-                0%   { opacity: 1; }
-                20%  { opacity: 0,9; }
-                40%  { opacity: 0.7; }
-                60%  { opacity: 0.5; }
-                80%  { opacity: 0.3; }
-                100% { opacity: 0; }
-		  }
-         
             
+            0% {
+                opacity: 1;
+            }
+            20% {
+                opacity: 0, 9;
+            }
+            40% {
+                opacity: 0.7;
+            }
+            60% {
+                opacity: 0.5;
+            }
+            80% {
+                opacity: 0.3;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
         body {
             margin: 0px;
         }
-        #container{
+        
+        #container {
             background: #666 url(ej03_tree.jpg) no-repeat -60px 0;
             width: 420px;
             height: 480px;
             position: relative;
-           
         }
-            
-            /* Clase de los copos */
+        /* Clase de los copos */
+        
         .snowflake {
             color: #fff;
             font-size: 2em;
             position: absolute;
-             /* Carga de Frames */
+            /* Carga de Frames */
+            
             -webkit-animation-name: orientacion, copos;
-             /* Tiempo infinito */
-			-webkit-animation-iteration-count: infinite;
-             /*  */
-			-webkit-animation-direction: normal; 
-             /*  */
-			-webkit-animation-timing-function: ease-in;
-         
+            /* Tiempo infinito */
             
+            -webkit-animation-iteration-count: infinite;
+            /*  */
+            
+            -webkit-animation-direction: normal;
+            /*  */
+            
+            -webkit-animation-timing-function: ease-in;
         }
-            
         /* Todos los copos */
-             /* Posición y duración */
+        /* Posición y duración */
+        
         .snowflake.f1 {
             left: 40px;
-            -webkit-animation-duration: 5s;	
+            -webkit-animation-duration: 5s;
             /* Se podria poner un nombre a un keyframe y crear porcentajes para la duracion  como con la opacidad */
         }
+        
         .snowflake.f2 {
             font-size: 1.8em;
             left: 120px;
-            -webkit-animation-duration: 4s;	
+            -webkit-animation-duration: 4s;
         }
+        
         .snowflake.f3 {
             left: 200px;
-            -webkit-animation-duration: 3s;	
+            -webkit-animation-duration: 3s;
         }
+        
         .snowflake.f4 {
             font-size: 1.5em;
             left: 320px;
-            -webkit-animation-duration: 5s;	
+            -webkit-animation-duration: 5s;
         }
-        </style>
-    </head>
-    <body>
-        <div id="container">
-            <div id="snow" class="snow">
-                <div class="snowflake f1">&#10053;</div>
-                <div class="snowflake f2">&#10052;</div>
-                <div class="snowflake f3">&#10053;</div>
-                <div class="snowflake f4">&#10052;</div>
-            </div>
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="snow" class="snow">
+            <div class="snowflake f1">&#10053;</div>
+            <div class="snowflake f2">&#10052;</div>
+            <div class="snowflake f3">&#10053;</div>
+            <div class="snowflake f4">&#10052;</div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

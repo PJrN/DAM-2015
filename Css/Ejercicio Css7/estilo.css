@@ -1,4 +1,4 @@
-body {    
+body {
     background-color: grey;
 }
 
@@ -8,7 +8,7 @@ h1 {
     text-align: center;
 }
 
-div .titulo{
+div .titulo {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -18,7 +18,6 @@ div .titulo{
     background-color: #DBB84D;
     text-align: center;
     font-size: 2em;
-
 }
 
 div .center {
@@ -77,5 +76,6 @@ div .derabajo {
     font-size: 2em;
 }
 
-p:hover {z-index: 2;}
-
+p:hover {
+    z-index: 2;
+}

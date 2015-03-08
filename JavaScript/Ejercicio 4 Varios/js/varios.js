@@ -4,7 +4,9 @@ function Persona(nombre, edad, genero) {
     this.genero = genero;
     this.obtDetalles = function () {
         console.log("Nombre: " + this.nombre + ", Edad:" + this.edad + ", Genero:" + this.genero);
-        this.hola = function() {console.log("Say Hello");}
+        this.hola = function () {
+            console.log("Say Hello");
+        }
     }
 
 
