@@ -18,13 +18,22 @@
     <section>
         <p>Lista de la compra</p>
         <article>
-            <input class="centrado" type="text" name="añadirtext" placeholder="Añadir a la lista...">
-                   <input class="centrado" type="button" name="añadir" value="Añadir">
+            <form>
+                <div id="listadelacompra" class="centrado"> </div>
+                <p></p>
+                <input class="centrado" type="text" name="productotext" id="productotext" placeholder="Añadir a la lista...">
+                <p></p>
+                <input class="centrado" type="button" onClick="addElement(getElementById('productotext').value);" value="Añadir Elemento" />
+                <p></p>
+
+            </form>
         </article>
     </section>
     <footer>
         beYourFlat &copy 2015, todos los derechos reservados.
     </footer>
+    <script src="js/funciones.js"></script>
+
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 /* Small screen */
 
 @media all and (max-width: 480px) {
-
     html,
     body,
     ul,
@@ -128,5 +127,11 @@
     }
     .nohidden {
         visibility: visible;
+    }
+    .borrar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        color: red;
     }
 }
