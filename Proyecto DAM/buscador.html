@@ -3,7 +3,7 @@
 <html lang="es">
 
 <head>
-    <title>beYourFlat Buscador</title>
+    <title>beYourFlat Piso</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -13,20 +13,46 @@
 <body>
     <header>
         <h1>beYourFlat</h1>
-        <h2>"Buscador"</h2>
     </header>
     <section>
-        <article>
+        <div>
+            <p></p>
 
-        </article>
-        </hr>
-        <article>
+            <hr>
 
-        </article>
+            <form action="#" method="post">
+                <h2>Busca tu piso ideal</h2>
+                <div>
+                    <p>Provincia:<span class="requerido">*</span>
+                        <select class="centrado" name='provincia'>
+                            <option value=0>-- Seleccione --</option>
+                            <option>Gipuzkoa</option>
+                            <option>Araba</option>
+                            <option>Bizkaia</option>
+                        </select>
+                        <p>Ciudad:<span class="requerido">*</span>
+                            <select class="centrado" name='ciudad'>
+                                <option value=0>-- Seleccione --</option>
+                                <option>Sin definir</option>
+                                <option>Sin definir</option>
+                                <option>Sin definir</option>
+                            </select>
+                            <p>Presupuesto Máximo:
+                                <input class="centrado" type="text" name="presupuesto" maxlength="4">
+                            </p>
+                        </p>
+
+                    </p>
+                    <input class="centrado" type="submit" name="buscar" value="Buscar">
+                </div>
+            </form>
+
+        </div>
     </section>
     <footer>
         beYourFlat &copy 2015, todos los derechos reservados.
     </footer>
+
 </body>
 
 </html>

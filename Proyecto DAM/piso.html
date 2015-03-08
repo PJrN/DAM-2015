@@ -33,16 +33,20 @@
             <form action="#" method="post">
                 <h2 onclick="javascript:mostrar()">Registra tu piso</h2>
                 <div id="oculto" class="hidden">
-                    <p>Nombre:<span class="requerido">*</span>
-                        <input class="centrado" type="text" name="nombre" maxlength="10" autofocus tabindex="1">
+                    <p>Usuario:<span class="requerido">*</span>
+                        <input placeholder="Escoja su nombre..." class="centrado" type="text" name="nombre" maxlength="10" autofocus tabindex="1">
                     </p>
                     <p>Clave:<span class="requerido">*</span>
-                        <input class="centrado" type="password" name="clave" maxlength="10" tabindex="2">
-                        </span>
+                        <input placeholder="Escoja su clave..." class="centrado" type="password" name="clave" maxlength="10" tabindex="2">
+
                     </p>
                     <p>Provincia:<span class="requerido">*</span>
-                        <input class="centrado" type="text" name="provincia" maxlength="10" tabindex="2">
-                        </span>
+                        <select class="centrado" name='provincia'>
+                            <option value=0>-- Seleccione --</option>
+                                <option>Gipuzkoa</option>
+                                <option>Araba</option>
+                                <option>Bizkaia</option>
+                        </select>
                     </p>
                     <input class="centrado" type="submit" name="registrar" value="Registrar">
                 </div>

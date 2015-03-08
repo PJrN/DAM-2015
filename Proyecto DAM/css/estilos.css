@@ -88,7 +88,9 @@ simple reset
     }
     .button {
         /* clase general */
-        
+        position: relative;
+        left: 10%;
+        width: 80%;
         border: 1px solid #dedede;
         border-radius: 3px;
         color: #555;
@@ -121,7 +123,6 @@ simple reset
         background: linear-gradient(top, #efefef, #f8f8f8);
         filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#f8f8f8');
     }
-    
     .centrado {
         display: block;
         margin-left: auto;
@@ -136,4 +137,5 @@ simple reset
     .nohidden {
         visibility: visible;
     }
+    
 }
