@@ -1,45 +1,59 @@
 <!DOCTYPE html>
- 
+
 <html lang="es">
- 
+
 <head>
-<title>beYourFlat Piso</title>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="css/estilos.css" />
-<link rel="shortcut icon" href="/favicon.ico" />
+    <title>beYourFlat Piso</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
 
 </head>
- 
+
 <body>
     <header>
-       <h1>beYourFlat</h1>
+        <h1>beYourFlat</h1>
     </header>
     <section>
         <div>
             <p></p>
-<form action="principal.html" method="post">
-        <h2>Login</h2>
-         <p>Usuario:<input class="centrado" type="text" name="usuario" maxlength="10" autofocus tabindex="3"></p>
-         <p>Clave:<input class="centrado" type="password" name="clavepiso" maxlength="10" tabindex="4"></p>
-            <input class="centrado" type="submit" name="registrar" value="Entrar">
-</form>
-           
+            <form action="principal.html" method="post">
+                <h2>Login</h2>
+                <p>Usuario:
+                    <input class="centrado" type="text" name="usuario" maxlength="10" autofocus tabindex="3">
+                </p>
+                <p>Clave:
+                    <input class="centrado" type="password" name="clavepiso" maxlength="10" tabindex="4">
+                </p>
+                <input class="centrado" type="submit" name="registrar" value="Entrar">
+            </form>
+
             <hr>
-            
-<form action="#" method="post">
-         <h2 onclick="javascript:mostrar()">Registra tu piso</h2>
-            <div id="oculto" class="hidden">
-                <p>Nombre:<span class="requerido">*</span><input class="centrado" type="text" name="nombre" maxlength="10" autofocus tabindex="1"></p>
-                <p>Clave:<span class="requerido">*</span><input class="centrado" type="password" name="clave" maxlength="10" tabindex="2"></span></p>
-                <input class="centrado" type="submit" name="registrar" value="Registrar">
-            </div>
-</form>
-    
+
+            <form action="#" method="post">
+                <h2 onclick="javascript:mostrar()">Registra tu piso</h2>
+                <div id="oculto" class="hidden">
+                    <p>Nombre:<span class="requerido">*</span>
+                        <input class="centrado" type="text" name="nombre" maxlength="10" autofocus tabindex="1">
+                    </p>
+                    <p>Clave:<span class="requerido">*</span>
+                        <input class="centrado" type="password" name="clave" maxlength="10" tabindex="2">
+                        </span>
+                    </p>
+                    <p>Provincia:<span class="requerido">*</span>
+                        <input class="centrado" type="text" name="provincia" maxlength="10" tabindex="2">
+                        </span>
+                    </p>
+                    <input class="centrado" type="submit" name="registrar" value="Registrar">
+                </div>
+            </form>
+
         </div>
     </section>
     <footer>
         beYourFlat &copy 2015, todos los derechos reservados.
     </footer>
-           <script src="js/funciones.js"></script>
+    <script src="js/funciones.js"></script>
 </body>
+
 </html>
