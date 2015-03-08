@@ -1,16 +1,7 @@
 /* Small screen */
 
 @media all and (max-width: 480px) {
-    /* --------------------------------
-Site:       Site name
-CSS author: Your name here
-Updated:    Date
-Updated by: Your name here
--------------------------------- */
-    /* ----------------------------
-simple reset
----------------------------- */
-    
+
     html,
     body,
     ul,
@@ -88,6 +79,7 @@ simple reset
     }
     .button {
         /* clase general */
+        
         position: relative;
         left: 10%;
         width: 80%;
@@ -137,5 +129,4 @@ simple reset
     .nohidden {
         visibility: visible;
     }
-    
 }
