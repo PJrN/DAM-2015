@@ -25,7 +25,7 @@
             <textarea name="comentarios" id="registro_comentarios" rows="10"></textarea>
             <input type="checkbox" name="condiciones" id="registro_condiciones" value="1">
             <label for="registro_condiciones">Acepto las condiciones del servicio.</label>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" onsubmit="return validar(this)">
         </fieldset>
     </form>
     <script type="text/javascript" src="js/validador.js"></script>
