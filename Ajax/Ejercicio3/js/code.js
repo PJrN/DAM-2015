@@ -49,7 +49,8 @@ El uso más popular, si bien no el único, de esta interfaz es proporcionar cont
     function comprobarusuario () {
         if (peticion_http.readyState == READY_STATE_COMPLETE) {
             if (peticion_http.status == 200) {
-                document.getElementById("disponibilidad").innerHTML = peticion_http.responseText;
+                /* si la respuesta del servidor es correcta añado el valor al campo "disponibilidad" */
+                document.getElementById("disponibilidad").innerHTML = "¿Puedes utilizar este usuario?  " + peticion_http.responseText;
             }
         }
     }
@@ -63,8 +64,7 @@ El uso más popular, si bien no el único, de esta interfaz es proporcionar cont
         return encodeURIComponent(usuario.value) + Math.random();
     }
 
-
-
+//Evento.
     document.getElementById("comprobar").addEventListener("click", validar, true);
 
 

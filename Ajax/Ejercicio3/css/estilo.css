@@ -1,0 +1,19 @@
+h1 {
+    font-size: 4em;
+}
+
+.bordeado {
+    font-size: 2em;
+    left: auto;
+    right: auto;
+    border: 5px solid black;
+    border-top-left-radius: 15px;
+    display: inline-block;
+}
+
+.respuesta {
+    color: #FF0000;
+    font-size: 2em;
+    border: 2px solid black;
+    display: inline-block;
+}
