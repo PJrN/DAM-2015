@@ -19,7 +19,7 @@ window.onload = function () {
     }
 
     /*
-    XMLHttpRequest:
+XMLHttpRequest:
 La interfaz se implementa como una clase de la que una aplicación cliente puede generar tantas instancias como necesite para manejar el        diálogo con el servidor.
 
 El uso más popular, si bien no el único, de esta interfaz es proporcionar contenido dinámico y actualizaciones asíncronas en páginas WEB mediante tecnologías construidas sobre ella como por ejemplo AJAX.
@@ -38,7 +38,7 @@ El uso más popular, si bien no el único, de esta interfaz es proporcionar cont
         peticion_http = inicializa_xhr();
         if (peticion_http) {
             peticion_http.onreadystatechange = comprobarusuario;
-            peticion_http.open("POST", "http://localhost/Ajax/Ejercicio 3", true);
+            peticion_http.open("POST", "http://localhost/Ajax/Ejercicio3/compruebaDisponibilidad.php", true);
 
             peticion_http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             var query_string = crea_query_string();
@@ -54,13 +54,13 @@ El uso más popular, si bien no el único, de esta interfaz es proporcionar cont
         }
     }
     /*
-    La función crea_query_string obtiene el valor de  los campos y los concatena junto con el nombre de cada parámetro para formar la cadena de texto que se envía al servidor.
+    La función crea_query_string obtiene el valor de  los campos y los concatena junto con el nombre de cada parámetro para formar la cadena de       texto que se envía al servidor.
     El uso de la función encodeURIComponent() es imprescindible para evitar problemas con algunos caracteres especiales.
         */
+
     function crea_query_string() {
-        /* cargaContenido(); */
         var usuario = document.getElementById('comprobar');
-        return "clave usuario" + encodeURIComponent(usuario.value) + Math.random();
+        return encodeURIComponent(usuario.value) + Math.random();
     }
 
 
