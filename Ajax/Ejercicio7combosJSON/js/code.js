@@ -21,6 +21,7 @@ La interfaz se implementa como una clase de la que una aplicación cliente puede
 El uso más popular, si bien no el único, de esta interfaz es proporcionar contenido dinámico y actualizaciones asíncronas en páginas WEB mediante tecnologías construidas sobre ella como por ejemplo AJAX.
 */
 
+
     function inicializa_xhr() {
         if (window.XMLHttpRequest) {
             return new XMLHttpRequest();
@@ -30,11 +31,11 @@ El uso más popular, si bien no el único, de esta interfaz es proporcionar cont
     }
 
 
-    function validar() {
+    function rellenar() {
         peticion_http = inicializa_xhr();
         if (peticion_http) {
             peticion_http.onreadystatechange = respuesta;
-            peticion_http.open("POST", "http://localhost/Ejercicios/Ajax/Ejercicio7combosJSON/servidor/cargaProvincias.php", true);
+            peticion_http.open("POST", "http://localhost/Ejercicios/Ajax/Ejercicio7combosJSON/servidor/cargaProvinciasJSON.php", true);
 
             peticion_http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             var query_string = crea_query_string();
@@ -42,36 +43,56 @@ El uso más popular, si bien no el único, de esta interfaz es proporcionar cont
         }
     }
 
+    function rellenar2() {
+        peticion_http = inicializa_xhr();
+        if (peticion_http) {
+            peticion_http.onreadystatechange = respuesta;
+            peticion_http.open("POST", "http://localhost/Ejercicios/Ajax/Ejercicio7combosJSON/servidor/cargaMunicipiosJSON.php", true);
+
+            peticion_http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            var query_string = crea_query_string2();
+            peticion_http.send(query_string);
+        }
+    }
+
     function respuesta() {
-            if (peticion_http.readyState == READY_STATE_COMPLETE) {
-                if (peticion_http.status == 200) {
-                    var respuesta_json = peticion_http.responseText;
+        if (peticion_http.readyState == READY_STATE_COMPLETE) {
+            if (peticion_http.status == 200) {
+                var respuesta_json = peticion_http.responseText;
 
 
-                    /* se debe transformar esa cadena de texto en un objeto JSON */
-                    var objeto_json = JSON.parse(respuesta_json);
+                /* se debe transformar esa cadena de texto en un objeto JSON */
+                var objeto_json = JSON.parse(respuesta_json);
 
-                    // Con JSON
-                    var pronvicias = objeto_json.nombre;
+                // Con JSON
+                // var pronvicias = objeto_json.codigo;
 
-                    //muestro:
-                    document.getElementById("opcion").appendChild(provincias);
+                /* RECORRER EL P*** OBJETO DE JSON */
 
+                for (var i = 0; i < objeto_json.length; i++) {
+                    //console.log(objeto_json[i].nombre);
                 }
             }
         }
-        /*
-        La función crea_query_string obtiene el valor de  los campos y los concatena junto con el nombre de cada parámetro para formar la cadena de       texto que se envía al servidor.
-        El uso de la función encodeURIComponent() es imprescindible para evitar problemas con algunos caracteres especiales.
-            */
+    }
+
+    /*
+    La función crea_query_string obtiene el valor de  los campos y los concatena junto con el nombre de cada parámetro para formar la cadena de       texto que se envía al servidor.
+    El uso de la función encodeURIComponent() es imprescindible para evitar problemas con algunos caracteres especiales.
+        */
 
     function crea_query_string() {
 
         //buscas la variable dentro del php
-        return "provincias" + "&nocache=" + Math.random();
+        return "codigo" + "&nocache=" + Math.random();
     }
 
+    function crea_query_string2() {
 
+        //buscas la variable dentro del php
+        return "nombre" + "&nocache=" + Math.random();
+    }
 
-
+    rellenar();
+    // rellenar2();
 }
