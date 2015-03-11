@@ -32,21 +32,21 @@ El uso más popular, si bien no el único, de esta interfaz es proporcionar cont
 
 
     function validar() {
-        http_request = inicializa_xhr();
-        if (http_request) {
-            http_request.onreadystatechange = comprobarusuario;
-            http_request.open("POST", "http://localhost/Ejercicios/Ajax/Ejercicio4/servidor/compruebaDisponibilidadJSON.php", true);
+        peticion_http = inicializa_xhr();
+        if (peticion_http) {
+            peticion_http.onreadystatechange = comprobarusuario;
+            peticion_http.open("POST", "http://localhost/Ejercicios/Ajax/Ejercicio4/servidor/compruebaDisponibilidadJSON.php", true);
 
-            http_request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            peticion_http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             var query_string = crea_query_string();
-            http_request.send(query_string);
+            peticion_http.send(query_string);
         }
     }
 
     function comprobarusuario() {
-            if (http_request.readyState == READY_STATE_COMPLETE) {
-                if (http_request.status == 200) {
-                    var respuesta_json = http_request.responseText;
+            if (peticion_http.readyState == READY_STATE_COMPLETE) {
+                if (peticion_http.status == 200) {
+                    var respuesta_json = peticion_http.responseText;
 
 
                     /* se debe transformar esa cadena de texto en un objeto JSON */
@@ -57,7 +57,7 @@ El uso más popular, si bien no el único, de esta interfaz es proporcionar cont
                     var login = objeto_json.disponible.login;
 
                     //muestro:
-                    document.getElementById("disponibilidad").innerHTML = "¿Puedes utilizar este usuario?  " + login;
+
 
                 }
             }
