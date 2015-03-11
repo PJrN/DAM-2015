@@ -11,15 +11,15 @@ var contador = 1; //select id_producto from lista-compra +1 where fecha ;
 
 function addElement(productotext) {
 
-    
+
     var fecha = new Date();
-    
+
     var imagen = document.createElement('img');
-    
-    
+
+
     var borrar = document.createElement('input');
     borrar.setAttribute('type', 'button');
-    borrar.setAttribute('name', contador + "-" + + fecha.getDate() + "-" + (fecha.getMonth() +1) + "-" + fecha.getFullYear());
+    borrar.setAttribute('name', contador + "-" + +fecha.getDate() + "-" + (fecha.getMonth() + 1) + "-" + fecha.getFullYear());
     borrar.setAttribute('class', 'borrar');
     borrar.setAttribute("style", "background-image: url(/Proyecto%20DAM/images/check.png)");
 
@@ -28,24 +28,28 @@ function addElement(productotext) {
 
     var productonuevo = document.getElementById("listadelacompra");
     var insertar = document.createElement("p");
-    insertar.setAttribute ('name', contador + "-" + fecha.getDate() + "-" + (fecha.getMonth() +1) + "-" + fecha.getFullYear());
+    insertar.setAttribute('name', contador + "-" + fecha.getDate() + "-" + (fecha.getMonth() + 1) + "-" + fecha.getFullYear());
     insertar.innerHTML = productotext;
-    
-    
-    var urgente = document.createElement("p");
-    propertyIsEnumerable.setAttribute('name', "urgente");
-    urgente.setAttribute("style", "background-image: url(/Proyecto%20DAM/images/emergencia.png)");  
-    
-    
+
+
     //crear
-    productonuevo.appendChild(urgente);
+
 
     productonuevo.appendChild(insertar);
     productonuevo.appendChild(borrar);
 
+    if (document.getElementById("check").checked == true) {
+        var urgente = document.createElement("input");
+        urgente.setAttribute('type', 'button');
+        urgente.setAttribute('name', "urgente");
+        urgente.setAttribute('class', 'borrar');
+        urgente.setAttribute("style", "background-image: url(/Proyecto%20DAM/images/emergencia.png)");
+        productonuevo.appendChild(urgente);
+    }
+
     document.getElementById("productotext").value = "";
     document.getElementById("productotext").focus();
-    
+
     contador++;
 
 }

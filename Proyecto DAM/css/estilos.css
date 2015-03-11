@@ -130,11 +130,13 @@
     }
    
     .borrar {
-        display: block;
+        display: inline-block;
         margin-left: auto;
         margin-right: auto;
         color: red;
         width: 64px;
         height: 64px;
     }
+    
+
 }
