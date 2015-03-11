@@ -14,10 +14,15 @@ function addElement(productotext) {
     
     var fecha = new Date();
     
+    var imagen = document.createElement('img');
+    
+    
     var borrar = document.createElement('input');
     borrar.setAttribute('type', 'button');
     borrar.setAttribute('name', contador + "-" + + fecha.getDate() + "-" + (fecha.getMonth() +1) + "-" + fecha.getFullYear());
     borrar.setAttribute('class', 'borrar');
+    borrar.setAttribute("style", "background-image: url(/Proyecto%20DAM/images/check.png)");
+
     /* borrar.setAttribute('onclick', 'removeChild(node);'); */
 
 
@@ -25,6 +30,16 @@ function addElement(productotext) {
     var insertar = document.createElement("p");
     insertar.setAttribute ('name', contador + "-" + fecha.getDate() + "-" + (fecha.getMonth() +1) + "-" + fecha.getFullYear());
     insertar.innerHTML = productotext;
+    
+    
+    var urgente = document.createElement("p");
+    propertyIsEnumerable.setAttribute('name', "urgente");
+    urgente.setAttribute("style", "background-image: url(/Proyecto%20DAM/images/emergencia.png)");  
+    
+    
+    //crear
+    productonuevo.appendChild(urgente);
+
     productonuevo.appendChild(insertar);
     productonuevo.appendChild(borrar);
 
@@ -32,8 +47,5 @@ function addElement(productotext) {
     document.getElementById("productotext").focus();
     
     contador++;
-    
-    
-
 
 }

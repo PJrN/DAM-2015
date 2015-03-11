@@ -128,10 +128,13 @@
     .nohidden {
         visibility: visible;
     }
+   
     .borrar {
         display: block;
         margin-left: auto;
         margin-right: auto;
         color: red;
+        width: 64px;
+        height: 64px;
     }
 }
