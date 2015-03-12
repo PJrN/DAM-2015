@@ -1,4 +1,5 @@
-window.onload = function () {
+$( document ).ready(function() {
+
 
     var contador = 1; //select id_producto from lista-compra +1 where fecha ;
 
@@ -35,6 +36,7 @@ window.onload = function () {
         checkbox.type = 'checkbox';
         checkbox.setAttribute('name', contador + "-" + fecha.getDate() + "-" + (fecha.getMonth() + 1) + "-" + fecha.getFullYear());
         checkbox.setAttribute('class', 'hidden');
+        checkbox.setAttribute('id', 'check');
 
         //Dibujar elementos creados:
         productonuevo.appendChild(insertar);
@@ -63,20 +65,14 @@ window.onload = function () {
 
     /* CONFIRMAR COMPRA */
 
-    document.getElementById("confirmarcompra").addEventListener("click", confirmelement, false);
+      /*document.getElementById("confirmarcompra").addEventListener("click", confirmelement, false);
 
-    function confirmelement() {
-
-        /* borrar.setAttribute('onclick', 'removeChild(node);'); */
-            var elemento = document.getElementsByTagName("input").type == "checkbox";
-        
-            if (elemento.className == "hidden") {
-                elemento.className = "nohidden";
-            } else {
-                elemento.className = "hidden";
-            }
+   borrar.setAttribute('onclick', 'removeChild(node);'); */
 
 
 
-    }
-}
+  $("confirmarcompra").click(function () {
+        $("div").addClass("hidden");
+    });
+
+});
