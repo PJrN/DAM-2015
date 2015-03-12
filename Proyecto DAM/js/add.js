@@ -42,7 +42,7 @@ window.onload = function () {
         productonuevo.appendChild(checkbox);
 
         //Crear y dibujar "urgente" si este está checkeado:
-        if (document.getElementById("check").checked == true) {
+        if (document.getElementById("checkurgente").checked == true) {
             var urgente = document.createElement("input");
             urgente.setAttribute('type', 'button');
             urgente.setAttribute('name', "urgente");
@@ -68,14 +68,13 @@ window.onload = function () {
     function confirmelement() {
 
         /* borrar.setAttribute('onclick', 'removeChild(node);'); */
-        function mostrar() {
-            
+            var elemento = document.getElementsByTagName("input").type == "checkbox";
+        
             if (elemento.className == "hidden") {
                 elemento.className = "nohidden";
             } else {
                 elemento.className = "hidden";
             }
-        }
 
 
 
