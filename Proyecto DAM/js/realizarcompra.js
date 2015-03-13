@@ -16,6 +16,18 @@ $(document).ready(function () {
             todos.push($(this).val());
         });
         //console.log(todos);
+        $.ajax({    //create an ajax request to load_page.php
+        type: "POST",
+        url: "php/listadeproductos_comprados.php",     
+        data: {
+                'todos[]': todos
+            },
+        dataType: "html",   //expect html to be returned                
+        success: function(response){                    
+            //alert(response);
+        }
+
+    });
 
     };
 

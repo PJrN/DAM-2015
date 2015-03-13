@@ -65,8 +65,8 @@ $(document).ready(function () {
 
         //llamar al script INSERTAR:
         $.ajax({    //create an ajax request to load_page.php
-        type: "GET",
-        url: "php/listadeproductos.php",             
+        type: "POST",
+        url: "php/listadeproductos.php",     
         dataType: "html",   //expect html to be returned                
         success: function(response){                    
             //alert(response);
