@@ -12,13 +12,14 @@ $(document).ready(function () {
     // Necesitaremos una funcion que agrege el array de img al DOM (no se realizaran cambios de DOM dentro de ningun bucle).
     $('#carga').on('click', function () {
 
+
     var columnas = $('#columnas').val();
     var filas = $('#columnas').val();
-    var id = columnas * filas;
+    var cnt = columnas * filas;
 
    // console.log(id);
 
-    for (var i = 0; i <= id; i++) {
+    for (var i = 0; i <= cnt; i++) {
 
         var imgcat = $('<img />', {
             id: 'cat',

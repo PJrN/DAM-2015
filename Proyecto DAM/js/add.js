@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function () {
 
 
     var contador = 1; //select id_producto from lista-compra +1 where fecha ;
@@ -34,16 +34,16 @@ $( document ).ready(function() {
         /* Crear checkbox confirmar nuevo */
         var checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.setAttribute('name', contador + "-" + fecha.getDate() + "-" + (fecha.getMonth() + 1) + "-" +                 fecha.getFullYear());
+        checkbox.setAttribute('name', contador + "-" + fecha.getDate() + "-" + (fecha.getMonth() + 1) + "-" + fecha.getFullYear());
         /* checkbox.setAttribute('id', 'check'); */
         checkbox.setAttribute('value', productotext);
-        
+
 
         //Dibujar elementos creados:
         productonuevo.appendChild(checkbox);
         productonuevo.appendChild(insertar);
         productonuevo.appendChild(borrar);
-        
+
 
         //Crear y dibujar "urgente" si este está checkeado:
         if (document.getElementById("checkurgente").checked == true) {
@@ -67,14 +67,13 @@ $( document ).ready(function() {
 
     /* CONFIRMAR COMPRA */
 
-      /*document.getElementById("confirmarcompra").addEventListener("click", confirmelement, false);
+    /*document.getElementById("confirmarcompra").addEventListener("click", confirmelement, false);
 
    borrar.setAttribute('onclick', 'removeChild(node);'); */
 
 
 
-  $("confirmarcompra").click(function () {
-        $("div").addClass("hidden");
-    });
+
+
 
 });
