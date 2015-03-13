@@ -63,10 +63,15 @@ $(document).ready(function () {
 
         contador++;
 
+        var ultimocheck = $('input[type="checkbox"]:last').val();
+        console.log(ultimocheck);
         //llamar al script INSERTAR:
         $.ajax({    //create an ajax request to load_page.php
         type: "POST",
-        url: "php/listadeproductos.php",     
+        url: "php/listadeproductos.php",
+        data: {
+                
+            },
         dataType: "html",   //expect html to be returned                
         success: function(response){                    
             //alert(response);
