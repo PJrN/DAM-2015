@@ -34,14 +34,16 @@ $( document ).ready(function() {
         /* Crear checkbox confirmar nuevo */
         var checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.setAttribute('name', contador + "-" + fecha.getDate() + "-" + (fecha.getMonth() + 1) + "-" + fecha.getFullYear());
-        checkbox.setAttribute('class', 'hidden');
-        checkbox.setAttribute('id', 'check');
+        checkbox.setAttribute('name', contador + "-" + fecha.getDate() + "-" + (fecha.getMonth() + 1) + "-" +                 fecha.getFullYear());
+        /* checkbox.setAttribute('id', 'check'); */
+        checkbox.setAttribute('value', productotext);
+        
 
         //Dibujar elementos creados:
+        productonuevo.appendChild(checkbox);
         productonuevo.appendChild(insertar);
         productonuevo.appendChild(borrar);
-        productonuevo.appendChild(checkbox);
+        
 
         //Crear y dibujar "urgente" si este está checkeado:
         if (document.getElementById("checkurgente").checked == true) {
