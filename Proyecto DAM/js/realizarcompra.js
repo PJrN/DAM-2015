@@ -6,16 +6,16 @@ $(document).ready(function () {
     /* FUNCION INSERTAR */
     function countChecked() {
         var total = $("input:checked").length;
-        console.log((total + (total === 1 ? " ha sido" : " han sido") + " seleccionado/s!"));
+        //console.log((total + (total === 1 ? " ha sido" : " han sido") + " seleccionado/s!"));
 
 
-var todos = []
+        var todos = []
 
-    $("input[type=checkbox]:checked").each(function(){
-	//cada elemento seleccionado
-        todos.push($(this).val());
-});
-        console.log(todos);
+        $("input[type=checkbox]:checked").each(function () {
+            //cada elemento seleccionado
+            todos.push($(this).val());
+        });
+        //console.log(todos);
 
     };
 
