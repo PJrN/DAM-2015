@@ -18,8 +18,6 @@ $id_usuario = "1";
 
 //Insert into Database:
 mysql_query("INSERT INTO producto(producto, fecha, estado, id_usuario)
-
 VALUES('$ultimoproducto', '$fecha', '$estado', '$id_usuario');",$link)or die("Error en la introducción de datos");
-
 
 ?>
