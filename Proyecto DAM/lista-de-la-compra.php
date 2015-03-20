@@ -41,7 +41,7 @@ include("php/conexion.php");
 $link= Conectarse();
 
 
-echo "<option value=0 >-- Seleccione --</option>"; 
+echo "<option value=0>-- Seleccione --</option>"; 
 
 $sql="SELECT id_establecimiento,nombre FROM establecimiento ORDER BY nombre ASC "; 
 $result=mysql_query($sql); 
@@ -52,7 +52,7 @@ echo '<option value="'.$item[ 'id_establecimiento']. '" >'.$item[ 'nombre']. '</
             </td>
             <br/>
             <td>Coste total:</td>
-            <td><input type="text" name="coste_total" placeholder="introduzca el valor..."></td>
+            <td><input type="text" id="coste_total" name="coste_total" placeholder="introduzca el valor..."></td>
 
 
             <input type="button" class="centrado" name="confirmarcompra" id="confirmarcompra" value="Confirmar compra">

@@ -6,10 +6,10 @@ $link= Conectarse();
 
 //Return
 $datos = $_POST['todos'];
-
+$coste_total = $_POST['costetotal'];
 //Comprobar datos:
 $datos_separados = implode(",", $datos);
-echo $datos_separados;
+//echo $datos_separados;
 
 //Estado always false(compra realizada):
 $estado = "2";
@@ -21,7 +21,7 @@ $id_usuario = "1";
 //Establecimiento pendiente de recibir Post:
 $id_establecimiento = "1";
 //CosteTotal pendiente de recibir por Post:
-$coste_total = "10";
+echo ($coste_total);
 
 
 mysql_query("INSERT INTO compra(producto, fecha, estado, coste_total, id_usuario, id_establecimiento)

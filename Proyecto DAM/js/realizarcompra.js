@@ -5,9 +5,14 @@ $(document).ready(function () {
 
     /* FUNCION INSERTAR */
     function countChecked() {
-        var total = $("input:checked").length;
+        //var total = $("input:checked").length;
         //console.log((total + (total === 1 ? " ha sido" : " han sido") + " seleccionado/s!"));
+        var costetotal = document.getElementById("coste_total").value;
+        //console.log(costetotal);
 
+
+        var establecimiento = $("#id_establecimiento").val(); 
+        console.log(establecimiento);
 
         var todos = []
 
@@ -20,7 +25,9 @@ $(document).ready(function () {
             type: "POST",
             url: "php/listadeproductos_comprados.php",
             data: {
-                'todos[]': todos
+                'todos[]': todos,
+                'costetotal': costetotal
+
             },
             dataType: "html", //expect html to be returned                
             success: function (response) {
