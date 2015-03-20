@@ -6,4 +6,3 @@ function mostrar() {
         elemento.className = "hidden";
     }
 }
-
