@@ -7,7 +7,8 @@ $link= Conectarse();
 //Return
 $datos = $_POST['todos'];
 $coste_total = $_POST['costetotal'];
-//Comprobar datos:
+$id_establecimiento = $_POST['establecimiento'];
+
 $datos_separados = implode(",", $datos);
 //echo $datos_separados;
 
@@ -18,10 +19,10 @@ $fecha = date('Y-m-d H:i:s');
 
 //Usuario pendiente de recibir por sesion:
 $id_usuario = "1";
-//Establecimiento pendiente de recibir Post:
-$id_establecimiento = "1";
+
 //CosteTotal pendiente de recibir por Post:
-echo ($coste_total);
+//echo ($coste_total);
+echo ($id_establecimiento);
 
 
 mysql_query("INSERT INTO compra(producto, fecha, estado, coste_total, id_usuario, id_establecimiento)

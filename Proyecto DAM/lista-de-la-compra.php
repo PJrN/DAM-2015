@@ -34,7 +34,7 @@
 
             <td width="219">Provincia:</td>
             <td>
-                <select name='provincia'> 
+                <select name='provincia' id="id_establecimiento"> 
 <?php
 //Include the connection:
 include("php/conexion.php");
