@@ -25,6 +25,6 @@ $id_usuario = "1";
 echo ($id_establecimiento);
 
 
-mysql_query("INSERT INTO compra(producto, fecha, estado, coste_total, id_usuario, id_establecimiento)
+mysql_query("INSERT INTO producto_comprado(productos, fecha, estado, coste_total, id_usuario, id_establecimiento)
 VALUES('$datos_separados', '$fecha', '$estado', '$coste_total', '$id_usuario', '$id_establecimiento');",$link)or die("Error en la introducción de datos");
 ?>
