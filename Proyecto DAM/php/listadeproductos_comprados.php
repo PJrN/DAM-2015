@@ -22,7 +22,7 @@ $id_usuario = "1";
 
 //CosteTotal pendiente de recibir por Post:
 //echo ($coste_total);
-echo ($id_establecimiento);
+//echo ($id_establecimiento);
 
 
 mysql_query("INSERT INTO producto_comprado(productos, fecha, estado, coste_total, id_usuario, id_establecimiento)

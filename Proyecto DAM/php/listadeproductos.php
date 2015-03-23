@@ -12,9 +12,14 @@ $ultimoproducto= $_POST["ultimocheck"];
 //Estado always true:
 $estado = "1";
 //Return date:
-$fecha = date('Y-m-d H:i:s');
+$fecha = date('Y-m-d');
 //Usuario pendiente de recibir por sesion:
 $id_usuario = "1";
+
+//echo ($ultimoproducto);
+//echo ($fecha);
+//echo ($estado);
+//echo ($id_usuario);
 
 //Insert into Database:
 mysql_query("INSERT INTO producto(producto, fecha, estado, id_usuario)

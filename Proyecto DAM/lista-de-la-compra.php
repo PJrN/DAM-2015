@@ -43,7 +43,7 @@ $link= Conectarse();
 
 echo "<option value=0>-- Seleccione --</option>"; 
 
-$sql="SELECT id_establecimiento,establecimiento FROM establecimiento ORDER BY nombre ASC "; 
+$sql="SELECT id_establecimiento,establecimiento FROM establecimiento ORDER BY establecimiento ASC "; 
 $result=mysql_query($sql); 
 while($item=mysql_fetch_assoc($result)) { 
 echo '<option value="'.$item[ 'id_establecimiento']. '" >'.$item[ 'establecimiento']. '</option>'; } 
