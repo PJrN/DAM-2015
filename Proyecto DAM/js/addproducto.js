@@ -11,12 +11,19 @@ $(document).ready(function () {
     function addElement(productotext) {
 
         /* div donde se insertaran los elementos creados */
-        var productonuevo = document.getElementById("listadelacompra");
+        var div_productonuevo = document.getElementById("listadelacompra");
 
 
         var productotext = document.getElementById("productotext").value;
         var fecha = new Date();
 
+         /* Crear div para productos */
+
+        var divproducto = document.createElement("div");
+        divproducto.setAttribute('id', 'divproducto');
+
+        
+        
         /* Crear boton borrar */
         var borrar = document.createElement('input');
         borrar.setAttribute('type', 'button');
@@ -40,6 +47,11 @@ $(document).ready(function () {
 
 
         //Dibujar elementos creados:
+        div_productonuevo.appendChild(divproducto);
+        
+        /* div donde se insertaran los elementos creados */
+        var productonuevo = document.getElementById("divproducto");
+        
         productonuevo.appendChild(checkbox);
         productonuevo.appendChild(insertar);
         productonuevo.appendChild(borrar);
@@ -51,7 +63,7 @@ $(document).ready(function () {
             urgente.setAttribute('type', 'button');
             urgente.setAttribute('name', "urgente");
             urgente.setAttribute('class', 'borrar');
-            urgente.setAttribute("style", "background-image: url(/Proyecto%20DAM/images/emergencia.png)");
+            urgente.setAttribute("style", "background-image: url(/images/emergencia.png)");
             productonuevo.appendChild(urgente);
         }
 
