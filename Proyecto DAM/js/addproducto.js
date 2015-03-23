@@ -17,13 +17,14 @@ $(document).ready(function () {
         var productotext = document.getElementById("productotext").value;
         var fecha = new Date();
 
-         /* Crear div para productos */
+        /* Crear div para productos */
 
         var divproducto = document.createElement("div");
         divproducto.setAttribute('id', 'divproducto');
+        divproducto.setAttribute('class', 'divproducto');
 
-        
-        
+
+
         /* Crear boton borrar */
         var borrar = document.createElement('input');
         borrar.setAttribute('type', 'button');
@@ -48,10 +49,12 @@ $(document).ready(function () {
 
         //Dibujar elementos creados:
         div_productonuevo.appendChild(divproducto);
-        
+
         /* div donde se insertaran los elementos creados */
-        var productonuevo = document.getElementById("divproducto");
-        
+        var productonuevo = document.getElementById('divproducto');
+        //$("div.divproducto:last");
+
+
         productonuevo.appendChild(checkbox);
         productonuevo.appendChild(insertar);
         productonuevo.appendChild(borrar);

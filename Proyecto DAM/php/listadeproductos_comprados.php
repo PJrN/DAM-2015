@@ -24,7 +24,20 @@ $id_usuario = "1";
 //echo ($coste_total);
 //echo ($id_establecimiento);
 
+$cantidad = count($datos);
+//echo $cantidad;
+
+
+
 
 mysql_query("INSERT INTO producto_comprado(productos, fecha, estado, coste_total, id_usuario, id_establecimiento)
 VALUES('$datos_separados', '$fecha', '$estado', '$coste_total', '$id_usuario', '$id_establecimiento');",$link)or die("Error en la introducción de datos");
+
+//for($i=0;$i<$cantidad;$i++)
+//{
+    
+//mysql_query("UPDATE estado where producto = $datos[$i])
+
+    //echo ($datos[$i]);
+//}
 ?>
