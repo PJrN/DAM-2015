@@ -13,46 +13,75 @@
 
 <body>
 
-    <div data-role="page" data-position="fixed" id="pagina1" class="back">
+    <div data-role="page" data-position="fixed" id="pizzas" class="back">
 
-        <div data-role="header">
-            <h1>Pizza Per Tutti</h1>
+        <div data-role="header" data-theme="a">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#telefono" data-icon="phone">Tel&eacute;fono</a>
+                    </li>
+                    <li><a href="#pizzas" data-icon="star" class="ui-btn-active">Pizzas</a>
+                    </li>
+                    <li><a href="#informacion" data-icon="info">Informaci&oacute;n</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /navbar -->
 
 
         </div>
         <!-- /header -->
 
         <div data-role="content" class="ui-content">
+            <div data-role="header">
+                <h1>Pizza Per Tutti (1)</h1>
+            </div>
 
-            <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d">
+            <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d" data-theme="b">
                 <h3>Margherita</h3>
-                <p>Tomate, mozzarella
-Tomate, mozzarella 8€</p>
+                <p>Tomate, mozzarella</p>
+                <p>Tomate, mozzarella</p>
+                <p><strong>8&euro;</strong>
+                </p>
             </div>
-            <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d">
+            <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d" data-theme="b">
                 <h3>Napoli</h3>
-                <p>Tomatea, mozzarella, antxoa, oliba beltzak
-Tomate, mozzarella, anchoa, aceituna negra 9€</p>
+                <p>Tomatea, mozzarella, antxoa, oliba beltzak</p>
+                <p>Tomate, mozzarella, anchoa, aceituna negra </p>
+                <p><strong>9&euro;</strong>
+                </p>
             </div>
-            <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d">
+            <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d" data-theme="b">
                 <h3>Prosciutto</h3>
-                <p>Soy Algo.</p>
+                <p>Tomatea, mozzarella, urdaiazpiko egosia</p>
+                <p>Tomate, mozzarella, york</p>
+                <p><strong>9&euro;</strong>
+                </p>
             </div>
-            <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d">
+            <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d" data-theme="b">
                 <h3>Prosciutto + Funghi</h3>
-                <p>Soy Algo.</p>
+                <p>Tomatea, mozzarella, urdaiazpiko egosia, txanpiñoiak</p>
+                <p>Tomate, mozzarella, york, txampis</p>
+                <p><strong>10&euro;</strong>
+                </p>
+            </div>
+            <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d" data-theme="b">
+                <h3>Tonno</h3>
+                <p>Tomatea, mozzarella, atuna, tipula</p>
+                <p>Tomate, mozzarella, atún, cebolla</p>
+                <p><strong>9€</strong>
+                </p>
             </div>
 
 
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar" data-iconpos="left">
                     <ul>
-                        <li><a href="#pagina1" data-icon="grid" class="ui-btn-active">1</a>
+                        <li><a href="#pagina3" data-icon="carat-l" class="ui-btn-active">Atr&aacute;s</a>
                         </li>
-                        <li><a href="#pagina2" data-icon="grid">Más...</a>
+                        <li><a href="#pagina2" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-r ui-btn-icon-right">Adelante</a>
                         </li>
-                        <li><a href="#pagina3" data-icon="grid">Más...</a>
-                        </li>
+
                     </ul>
                 </div>
                 <!-- /navbar -->
@@ -66,9 +95,8 @@ Tomate, mozzarella, anchoa, aceituna negra 9€</p>
     <div data-role="page" id="pagina2" class="back">
 
         <div data-role="header">
-            <h1>Pizza Per Tutti</h1>
-
-        </div>
+                <h1>Pizza Per Tutti (2)</h1>
+            </div>
         <!-- /header -->
         <div data-role="content" class="ui-content">
             <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d">
@@ -96,12 +124,11 @@ Tomate, mozzarella, anchoa, aceituna negra 9€</p>
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar" data-iconpos="left">
                     <ul>
-                        <li><a href="#pagina1" data-icon="grid">Más...</a>
+                        <li><a href="#pizzas" data-icon="carat-l" class="ui-btn-active">Atr&aacute;s</a>
                         </li>
-                        <li><a href="#pagina2" data-icon="grid" class="ui-btn-active">2</a>
+                        <li><a href="#pagina3" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-r ui-btn-icon-right">Adelante</a>
                         </li>
-                        <li><a href="#pagina3" data-icon="grid">Más...</a>
-                        </li>
+
                     </ul>
                 </div>
                 <!-- /navbar -->
@@ -110,13 +137,13 @@ Tomate, mozzarella, anchoa, aceituna negra 9€</p>
         </div>
     </div>
 
-        <!-- ##################################### PAGINA 3 ##################################### -->
+    <!-- ##################################### PAGINA 3 ##################################### -->
 
 
     <div data-role="page" id="pagina3" class="back">
 
         <div data-role="header">
-            <h1>Pizza Per Tutti</h1>
+            <h1>Pizza Per Tutti (3)</h1>
 
         </div>
         <!-- /header -->
@@ -146,20 +173,79 @@ Tomate, mozzarella, anchoa, aceituna negra 9€</p>
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar" data-iconpos="left">
                     <ul>
-                        <li><a href="#pagina1" data-icon="grid">Más...</a>
+                        <li><a href="#pagina2" data-icon="carat-l" class="ui-btn-active">Atr&aacute;s</a>
                         </li>
-                        <li><a href="#pagina2" data-icon="grid">Más...</a>
+                        <li><a href="#pizzas" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-r ui-btn-icon-right">Adelante</a>
                         </li>
-                        <li><a href="#pagina3" data-icon="grid" class="ui-btn-active">3</a>
-                        </li>
+
                     </ul>
                 </div>
                 <!-- /navbar -->
             </div>
             <!-- /footer -->
         </div>
+    </div>
+
+    <!-- ####################################### Informacion ##############################################-->
+    <div data-role="page" data-position="fixed" id="informacion" class="back">
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#telefono" data-icon="phone">Tel&eacute;fono</a>
+                </li>
+                <li><a href="#pizzas" data-icon="star">Pizzas</a>
+                </li>
+                <li><a href="#informacion" data-icon="info" class="ui-btn-active">Informaci&oacute;n</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /navbar -->
 
 
+        <!-- /header -->
+
+        <div data-role="content" class="ui-content">
+
+            <div data-role="header">
+                <h1>Horario</h1>
+            </div>
+<p><ul></ul>
+<li>Lunes:</li>
+<li>Martes:</li></p>
+
+            <!-- /footer -->
+        </div>
+    </div>
+    <!-- ##################################### Telefono ##################################### -->
+    <div data-role="page" data-position="fixed" id="telefono" class="back">
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#telefono" data-icon="phone">Tel&eacute;fono</a>
+                </li>
+                <li><a href="#pizzas" data-icon="star">Pizzas</a>
+                </li>
+                <li><a href="#informacion" data-icon="info" class="ui-btn-active">Informaci&oacute;n</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /navbar -->
+
+
+        <!-- /header -->
+
+        <div data-role="content" class="ui-content">
+
+            <div data-role="header">
+                <h1>Telefono</h1>
+            </div>
+            <a href="tel:943797625" data-role="button" rel="external" data-icon="phone">943797625</a>
+
+
+
+            <!-- /footer -->
+        </div>
+    </div>
 
 </body>
 <script type="text/javascript" src="js/function.js"></script>
