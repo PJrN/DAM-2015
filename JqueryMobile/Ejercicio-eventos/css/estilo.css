@@ -1,7 +1,4 @@
-div.noclick {
+.back {
 
-    background-color: #ff0;
-  }
-  div.click.tap {
-    background-color: #000;
-  }
+background: url(../images/pizzapertutti.png) !important;
+}
