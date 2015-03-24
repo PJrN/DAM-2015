@@ -1,0 +1,7 @@
+div.noclick {
+
+    background-color: #ff0;
+  }
+  div.click.tap {
+    background-color: #000;
+  }

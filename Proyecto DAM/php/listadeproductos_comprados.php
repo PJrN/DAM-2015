@@ -34,11 +34,11 @@ mysql_query("INSERT INTO producto_comprado(productos, fecha, estado, coste_total
 VALUES('$datos_separados', '$fecha', '$estado', '$coste_total', '$id_usuario', '$id_establecimiento');",$link)or die("Error en la introducción de datos");
 
 
-for($i=0;$i<=$cantidad;$i++)
+for($i=0;$i<$cantidad;$i++)
 {
 $updateproducto = $datos[$i];
-echo $updateproducto;
-mysql_query("UPDATE producto SET estado='0' WHERE producto = '$updateproducto');",$link)or die("Error en la introducción de datos update");
+//echo $updateproducto;
+mysql_query("UPDATE producto SET estado='0' WHERE producto = '$updateproducto';",$link)or die("Error en la introducción de datos update");
 
 }
 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jquery Mobile Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" >
+
+        <div data-role="header">
+            <h1>Pagina Principal</h1>
+
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li><a href="#pagina1" data-rel="button">Pagina 1</a>
+                </li>
+                <li><a href="#">Link 2</a>
+                </li>
+                <li>
+                    <a href="#">Link 3</a>
+                </li>
+                <li><a href="#">Link 4</a>
+                </li>
+                <li><a href="#">Link 5</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /header -->
+        <div data-role="content" class="ui-content">
+            <p>Este es el contenido principal de la App</p>
+            <div class="noclick">¡NO CLICKES!</div>
+        </div>
+        <!-- /content -->
+
+    </div>
+    <!-- /page -->
+    <div data-role="footer"></div>
+
+    <!-- ##################################### PAGINA 1 ##################################### -->
+
+
+ <div data-role="page" id="pagina1">
+
+        <div data-role="header">
+            <h1>Pagina 1</h1>
+
+        </div>
+        <!-- /header -->
+        <div data-role="content" class="ui-content">
+            <p>Este es el contenido principal de la Pagina 1 de la App</p>
+        </div>
+        <!-- /content -->
+<a href="index.html" data-rel="back" data-direction=”reverse”></a>
+    </div>
+    <!-- /page -->
+    <div data-role="footer"></div>
+
+</body>
+      <script type="text/javascript" src="js/a.js"></script>
+
+
+</html>
