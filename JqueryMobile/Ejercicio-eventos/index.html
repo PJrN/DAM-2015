@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 </head>
 
@@ -18,11 +18,11 @@
         <div data-role="header" data-theme="a">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#telefono" data-icon="phone">Tel&eacute;fono</a>
+                    <li><a href="#telefono" data-icon="phone" data-transition="flip">Tel&eacute;fono</a>
                     </li>
-                    <li><a href="#pizzas" data-icon="star" class="ui-btn-active">Pizzas</a>
+                    <li><a href="#pizzas" data-icon="star" class="ui-btn-active" data-transition="pop">Pizzas</a>
                     </li>
-                    <li><a href="#informacion" data-icon="info">Informaci&oacute;n</a>
+                    <li><a href="#informacion" data-icon="info" data-transition="flip">Informaci&oacute;n</a>
                     </li>
                 </ul>
             </div>
@@ -36,7 +36,7 @@
             <div data-role="header">
                 <h1>Pizza Per Tutti (1)</h1>
             </div>
-
+<div data-role="collapsible-set">
             <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d" data-theme="b">
                 <h3>Margherita</h3>
                 <p>Tomate, mozzarella</p>
@@ -72,14 +72,15 @@
                 <p><strong>9€</strong>
                 </p>
             </div>
+        </div>
 
 
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar" data-iconpos="left">
                     <ul>
-                        <li><a href="#pagina3" data-icon="carat-l" class="ui-btn-active">Atr&aacute;s</a>
+                        <li><a href="#pagina3" data-icon="carat-l" data-transition="slide">Atr&aacute;s</a>
                         </li>
-                        <li><a href="#pagina2" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-r ui-btn-icon-right">Adelante</a>
+                        <li><a href="#pagina2" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-r ui-btn-icon-right" data-transition="slide" class="ui-btn-active">Adelante</a>
                         </li>
 
                     </ul>
@@ -118,15 +119,15 @@
 
 
             <!-- /content -->
-            <a href="pagina1.html" data-rel="back" data-direction=”reverse”></a>
+            <a href="#pizzas" data-rel="back" data-direction=”reverse”></a>
 
             <!-- /page -->
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar" data-iconpos="left">
                     <ul>
-                        <li><a href="#pizzas" data-icon="carat-l" class="ui-btn-active">Atr&aacute;s</a>
+                        <li><a href="#pizzas" data-icon="carat-l" data-transition="slide">Atr&aacute;s</a>
                         </li>
-                        <li><a href="#pagina3" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-r ui-btn-icon-right">Adelante</a>
+                        <li><a href="#pagina3" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-r ui-btn-icon-right" data-transition="slide" class="ui-btn-active">Adelante</a>
                         </li>
 
                     </ul>
@@ -165,6 +166,7 @@
                 <p>Soy Algo.</p>
             </div>
 
+            <a href="#pagina2" data-rel="back" data-direction=”reverse”></a>
 
             <!-- /content -->
 
@@ -173,9 +175,9 @@
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar" data-iconpos="left">
                     <ul>
-                        <li><a href="#pagina2" data-icon="carat-l" class="ui-btn-active">Atr&aacute;s</a>
+                        <li><a href="#pagina2" data-icon="carat-l" data-transition="slide">Atr&aacute;s</a>
                         </li>
-                        <li><a href="#pizzas" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-r ui-btn-icon-right">Adelante</a>
+                        <li><a href="#pizzas" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-r ui-btn-icon-right" data-transition="slide" class="ui-btn-active">Adelante</a>
                         </li>
 
                     </ul>
@@ -187,15 +189,17 @@
     </div>
 
     <!-- ####################################### Informacion ##############################################-->
+
     <div data-role="page" data-position="fixed" id="informacion" class="back">
+            <a href="#pizzas" data-rel="back" data-direction=”reverse”></a>
 
         <div data-role="navbar">
             <ul>
-                <li><a href="#telefono" data-icon="phone">Tel&eacute;fono</a>
+                <li><a href="#telefono" data-icon="phone" data-transition="flip">Tel&eacute;fono</a>
                 </li>
-                <li><a href="#pizzas" data-icon="star">Pizzas</a>
+                <li><a href="#pizzas" data-icon="star" data-transition="pop">Pizzas</a>
                 </li>
-                <li><a href="#informacion" data-icon="info" class="ui-btn-active">Informaci&oacute;n</a>
+                <li><a href="#informacion" data-icon="info" class="ui-btn-active" data-transition="flip">Informaci&oacute;n</a>
                 </li>
             </ul>
         </div>
@@ -218,14 +222,15 @@
     </div>
     <!-- ##################################### Telefono ##################################### -->
     <div data-role="page" data-position="fixed" id="telefono" class="back">
+            <a href="#pizzas" data-rel="back" data-direction=”reverse”></a>
 
         <div data-role="navbar">
             <ul>
-                <li><a href="#telefono" data-icon="phone">Tel&eacute;fono</a>
+                <li><a href="#telefono" data-icon="phone" data-transition="flip">Tel&eacute;fono</a>
                 </li>
-                <li><a href="#pizzas" data-icon="star">Pizzas</a>
+                <li><a href="#pizzas" data-icon="star" data-transition="pop">Pizzas</a>
                 </li>
-                <li><a href="#informacion" data-icon="info" class="ui-btn-active">Informaci&oacute;n</a>
+                <li><a href="#informacion" data-icon="info" data-transition="flip" class="ui-btn-active">Informaci&oacute;n</a>
                 </li>
             </ul>
         </div>
@@ -237,7 +242,7 @@
         <div data-role="content" class="ui-content">
 
             <div data-role="header">
-                <h1>Telefono</h1>
+                <h1>Tel&eacute;fono</h1>
             </div>
             <a href="tel:943797625" data-role="button" rel="external" data-icon="phone">943797625</a>
 
