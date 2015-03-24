@@ -1,15 +1,15 @@
 $(document).ready(function () {
 
+'use strict'
 
     var contador = 1; //select id_producto from lista-compra +1 where fecha ;
 
 
-    /* EVENTLISTENER BOTON: INSERTAR PRODUCTOS A LISTA DE NECESIDAD */
-    document.getElementById("añadir").addEventListener("click", addElement, false);
 
     /* FUNCION INSERTAR */
     function addElement(productotext) {
 
+        console.log("saltas?");
         /* div donde se insertaran los elementos creados */
         var div_productonuevo = document.getElementById("listadelacompra");
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
         /* Crear div para productos */
 
         var divproducto = document.createElement("div");
-        divproducto.setAttribute('id', 'divproducto');
+        //divproducto.setAttribute('id', 'divproducto');
         divproducto.setAttribute('class', 'divproducto');
 
 
@@ -51,13 +51,13 @@ $(document).ready(function () {
         div_productonuevo.appendChild(divproducto);
 
         /* div donde se insertaran los elementos creados */
-        var productonuevo = document.getElementById('divproducto');
+        var productonuevo = document.getElementsByClassName('divproducto');
         //$("div.divproducto:last");
 
-
-        productonuevo.appendChild(checkbox);
-        productonuevo.appendChild(insertar);
-        productonuevo.appendChild(borrar);
+        
+        $(productonuevo).append(checkbox);
+        $(productonuevo).append(insertar);
+        $(productonuevo).append(borrar);
 
 
         //Crear y dibujar "urgente" si este está checkeado:
@@ -77,6 +77,10 @@ $(document).ready(function () {
 
 
         contador++;
+        
+        
+   
+        
 
         var ultimocheck = $('input[type="checkbox"]:last').val();
         //console.log(ultimocheck);
@@ -102,7 +106,9 @@ $(document).ready(function () {
    borrar.setAttribute('onclick', 'removeChild(node);'); */
 
 
-
+ /* EVENTLISTENER BOTON: INSERTAR PRODUCTOS A LISTA DE NECESIDAD */
+    document.getElementById("añadir").addEventListener("click", addElement, false);
+        
 
 
 

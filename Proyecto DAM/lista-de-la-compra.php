@@ -33,7 +33,7 @@
             </div>
             <hr>
 
-            <td width="219">Provincia:</td>
+            <td width="219">Establecimiento:</td>
             <td>
                 <select name='provincia' id="id_establecimiento"> 
 <?php
