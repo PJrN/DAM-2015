@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 </head>
 
@@ -57,7 +58,7 @@ echo '<option value="'.$item[ 'id_establecimiento']. '" >'.$item[ 'establecimien
 
             <input type="button" class="centrado" name="confirmarcompra" id="confirmarcompra" value="Confirmar compra">
         </form>
-
+<div id="dialog" title="Compra Realizada"></div>
     </section>
 
     <footer>

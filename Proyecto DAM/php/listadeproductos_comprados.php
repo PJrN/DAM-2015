@@ -13,7 +13,7 @@ $datos_separados = implode(",", $datos);
 //echo $datos_separados;
 
 //Estado always false(compra realizada):
-$estado = "2";
+$estado = "0";
 //Return date:
 $fecha = date('Y-m-d H:i:s');
 
