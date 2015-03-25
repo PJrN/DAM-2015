@@ -2,3 +2,5 @@
 
 background: url(../images/pizzapertutti.png) !important;
 }
+
+#map-page, #map-canvas { width: 80%; height: 80%; padding: 0; }
