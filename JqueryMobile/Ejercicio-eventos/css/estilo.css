@@ -3,4 +3,7 @@
 background: url(../images/pizzapertutti.png) !important;
 }
 
-#map-page, #map-canvas { width: 80%; height: 80%; padding: 0; }
+
+.ui-dialog-contain ui-overlay-shadow ui-corner-all {
+  background-color: #FFFFFF;!important;
+}
