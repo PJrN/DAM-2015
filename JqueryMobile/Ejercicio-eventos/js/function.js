@@ -1,3 +1,5 @@
+$("#elegir").on( "click", function() {
+
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
 
@@ -17,11 +19,13 @@ function shuffle(array) {
   return array;
 }
 
-var arr = ["Margherita", "Napoli","Prosciutto", "Prosciutto + Funghi","Napoli","Prosciutto","Napoli","Prosciutto"];
+var arr = ["Margherita", "Napoli","Prosciutto", "Prosciutto + Funghi","Tonno","Frankfurt","Pepperoni","Funghi","4 formaggi","Bolognesa","Vegetariana","Parmigiana","Barbakoa","Brava","4 stagioni","Boscaiola","diFreddy","Per Tutti","Potrue","Difranky","Mama Mia","Berezia","Carbonara","Siciliana","Tropikala","Pesto"];
 shuffle(arr);
 console.log(arr);
 console.log(arr[0]);
 $( "#decision" ).text(arr[0]);
+
+  });
 
 
 $(function () {
