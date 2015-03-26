@@ -2,8 +2,3 @@
 
 background: url(../images/pizzapertutti.png) !important;
 }
-
-
-.ui-dialog-contain ui-overlay-shadow ui-corner-all {
-  background-color: #FFFFFF;!important;
-}
