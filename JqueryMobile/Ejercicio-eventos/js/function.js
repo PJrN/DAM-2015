@@ -34,7 +34,7 @@ $(function(){
 
   // Callback function references the event target and adds the 'swipe' class to it
   function swiperleftindex( event ){
-$.mobile.changePage( "#pagina3", { transition: "slide", changeHash: false });
+$.mobile.changePage( "#pagina2", { transition: "slide", changeHash: false });
   }
 });
 
@@ -44,7 +44,7 @@ $(function(){
 
   // Callback function references the event target and adds the 'swipe' class to it
   function swiperrightindex( event ){
-$.mobile.changePage( "#pagina2", { transition: "slide", changeHash: false });
+$.mobile.changePage( "#pagina3", { transition: "slide", changeHash: false });
   }
 });
 
@@ -55,7 +55,7 @@ $(function(){
 
   // Callback function references the event target and adds the 'swipe' class to it
   function swiperleftpagina2( event ){
-$.mobile.changePage( "#pizzas", { transition: "slide", changeHash: false });
+$.mobile.changePage( "#pagina3", { transition: "slide", changeHash: false });
   }
 });
 
@@ -65,7 +65,7 @@ $(function(){
 
   // Callback function references the event target and adds the 'swipe' class to it
   function swiperrightpagina2( event ){
-$.mobile.changePage( "#pagina3", { transition: "slide", changeHash: false });
+$.mobile.changePage( "#pizzas", { transition: "slide", changeHash: false });
   }
 });
 
@@ -76,7 +76,7 @@ $(function(){
 
   // Callback function references the event target and adds the 'swipe' class to it
   function swiperlefpagina3( event ){
-$.mobile.changePage( "#pagina2", { transition: "slide", changeHash: false });
+$.mobile.changePage( "#pizzas", { transition: "slide", changeHash: false });
   }
 });
 
@@ -86,7 +86,7 @@ $(function(){
 
   // Callback function references the event target and adds the 'swipe' class to it
   function swiperrightpagina3( event ){
-$.mobile.changePage( "#pizzas", { transition: "slide", changeHash: false });
+$.mobile.changePage( "#pagina2", { transition: "slide", changeHash: false });
   }
 });
 
