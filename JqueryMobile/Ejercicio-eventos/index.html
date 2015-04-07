@@ -35,13 +35,13 @@
                 </ul>
             </div>
             <!-- /navbar -->
+            <h1>Pizza Per Tutti (1)</h1>
         </div>
         <!-- /header -->
 
+
+
         <div data-role="content" class="ui-content">
-            <div data-role="header">
-                <h1>Pizza Per Tutti (1)</h1>
-            </div>
             <div data-role="collapsible-set">
                 <div data-role="collapsible" data-content-theme="a" data-collapsed-icon="arrow-r" and data-expanded-icon="arrow-d" data-theme="b">
                     <h3>Margherita</h3>
@@ -266,15 +266,15 @@
         </div>
     </div>
 
-    <!-- ####################################### Informacion ##############################################-->
+    <!-- ####################################### Mapa ##############################################-->
 
 
     <!-- /header -->
 
 
-    	<div id="map-page" data-role="page">
-			<div data-role="header">
-                <div data-role="navbar">
+    <div id="map-page" data-role="page">
+        <div data-role="header">
+            <div data-role="navbar">
                 <ul>
                     <li><a href="#telefono" data-icon="phone" data-transition="flip">Tel&eacute;fono</a>
                     </li>
@@ -284,39 +284,46 @@
                     </li>
                 </ul>
             </div>
-			</div>
-			<div data-role="content">
-				<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
-					<div id="map-canvas" style="height:350px;"></div>
-				</div>
-			</div>
-		</div>
+            <!-- /header -->
+            <h1>Horario</h1>
+        </div>
+        <div data-role="content">
+            <p>19:00tik aurrera. Egunero zabalik.</p>
+            <p>19:00 en adelante. Abierto todos los d&iacute;as</p>
+        
+
+        <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:1em;">
+            <div id="map-canvas"></div>
+        </div>
+</div>
+    </div>
 
 
     <!-- ##################################### Telefono ##################################### -->
     <div data-role="page" data-position="fixed" id="telefono" class="back">
         <a href="#pizzas" data-rel="back" data-direction=”reverse”></a>
-
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#telefono" data-icon="phone" data-transition="flip" class="ui-btn-active">Tel&eacute;fono</a>
-                </li>
-                <li><a href="#pizzas" data-icon="star" data-transition="pop">Pizzas</a>
-                </li>
-                <li><a href="#informacion" data-icon="info" data-transition="flip">Informaci&oacute;n</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /navbar -->
-
-
-        <!-- /header -->
-
-        <div data-role="content" class="ui-content">
-
-            <div data-role="header">
-                <h1>Tel&eacute;fono</h1>
+        <div data-role="header">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#telefono" data-icon="phone" data-transition="flip" class="ui-btn-active">Tel&eacute;fono</a>
+                    </li>
+                    <li><a href="#pizzas" data-icon="star" data-transition="pop">Pizzas</a>
+                    </li>
+                    <li><a href="#map-page" data-icon="info" data-transition="flip">Informaci&oacute;n</a>
+                    </li>
+                </ul>
             </div>
+            <!-- /navbar -->
+
+
+            <!-- /header -->
+
+
+
+
+            <h1>Tel&eacute;fono</h1>
+        </div>
+        <div data-role="content" class="ui-content">
             <a href="tel:+34943797625" data-role="button" rel="external" data-icon="phone">943797625</a>
             <!-- /footer -->
         </div>
@@ -324,7 +331,7 @@
 
     <!-- ##################################### Dialog ##################################### -->
 
-    <div data-role="aleatorio" data-dialog="true" id="aleatorio" data-theme="b" class="back">
+    <div data-role="aleatorio" data-dialog="true" id="aleatorio" data-theme="b" class="back hidden">
         <div data-role="header">
             <h1 class="ui-title">Mi decisi&oacute;n es:</h1>
         </div>

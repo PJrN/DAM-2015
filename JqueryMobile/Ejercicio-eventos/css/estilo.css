@@ -1,6 +1,19 @@
 .back {
-
-background: url(../images/pizzapertutti.png) !important;
+    background: url(../images/pizzapertutti.png) !important;
 }
 
-#map-page, #map-canvas { width: 100%; height: 100%; padding: 0; }
+.hidden {
+    visibility: hidden;
+}
+
+.nohidden {
+    visibility: visible;
+}
+
+
+#map-canvas {
+    width: 100%;
+    height: 350px;
+    padding: 0;
+    position: relative;
+}

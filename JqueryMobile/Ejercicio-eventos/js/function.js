@@ -28,66 +28,90 @@ $("#elegir").on("click", function () {
 
 });
 
-$(function(){
-  // Bind the swipeHandler callback function to the swipe event on div.box
-  $( "#pizzas" ).on( "swipeleft", swiperleftindex );
+$(function () {
+    // Bind the swipeHandler callback function to the swipe event on div.box
+    $("#pizzas").on("swipeleft", swiperleftindex);
 
-  // Callback function references the event target and adds the 'swipe' class to it
-  function swiperleftindex( event ){
-$.mobile.changePage( "#pagina2", { transition: "slide", changeHash: false });
-  }
+    // Callback function references the event target and adds the 'swipe' class to it
+    function swiperleftindex(event) {
+        event.preventDefault();
+        $.mobile.changePage("#pagina2", {
+            transition: "slide",
+            changeHash: false
+        });
+    }
 });
 
-$(function(){
-  // Bind the swipeHandler callback function to the swipe event on div.box
-  $( "#pizzas" ).on( "swiperight", swiperrightindex );
+$(function () {
+    // Bind the swipeHandler callback function to the swipe event on div.box
+    $("#pizzas").on("swiperight", swiperrightindex);
 
-  // Callback function references the event target and adds the 'swipe' class to it
-  function swiperrightindex( event ){
-$.mobile.changePage( "#pagina3", { transition: "slide", changeHash: false });
-  }
-});
-
-
-$(function(){
-  // Bind the swipeHandler callback function to the swipe event on div.box
-  $( "#pagina2" ).on( "swipeleft", swiperleftpagina2 );
-
-  // Callback function references the event target and adds the 'swipe' class to it
-  function swiperleftpagina2( event ){
-$.mobile.changePage( "#pagina3", { transition: "slide", changeHash: false });
-  }
-});
-
-$(function(){
-  // Bind the swipeHandler callback function to the swipe event on div.box
-  $( "#pagina2" ).on( "swiperight", swiperrightpagina2 );
-
-  // Callback function references the event target and adds the 'swipe' class to it
-  function swiperrightpagina2( event ){
-$.mobile.changePage( "#pizzas", { transition: "slide", changeHash: false });
-  }
+    // Callback function references the event target and adds the 'swipe' class to it
+    function swiperrightindex(event) {
+        event.preventDefault();
+        $.mobile.changePage("#pagina3", {
+            transition: "slide",
+            changeHash: false
+        });
+    }
 });
 
 
-$(function(){
-  // Bind the swipeHandler callback function to the swipe event on div.box
-  $( "#pagina3" ).on( "swipeleft", swiperlefpagina3 );
+$(function () {
+    // Bind the swipeHandler callback function to the swipe event on div.box
+    $("#pagina2").on("swipeleft", swiperleftpagina2);
 
-  // Callback function references the event target and adds the 'swipe' class to it
-  function swiperlefpagina3( event ){
-$.mobile.changePage( "#pizzas", { transition: "slide", changeHash: false });
-  }
+    // Callback function references the event target and adds the 'swipe' class to it
+    function swiperleftpagina2(event) {
+        event.preventDefault();
+        $.mobile.changePage("#pagina3", {
+            transition: "slide",
+            changeHash: false
+        });
+    }
 });
 
-$(function(){
-  // Bind the swipeHandler callback function to the swipe event on div.box
-  $( "#pagina3" ).on( "swiperight", swiperrightpagina3 );
+$(function () {
+    // Bind the swipeHandler callback function to the swipe event on div.box
+    $("#pagina2").on("swiperight", swiperrightpagina2);
 
-  // Callback function references the event target and adds the 'swipe' class to it
-  function swiperrightpagina3( event ){
-$.mobile.changePage( "#pagina2", { transition: "slide", changeHash: false });
-  }
+    // Callback function references the event target and adds the 'swipe' class to it
+    function swiperrightpagina2(event) {
+        event.preventDefault();
+        $.mobile.changePage("#pizzas", {
+            transition: "slide",
+            changeHash: false
+        });
+    }
+});
+
+
+$(function () {
+    // Bind the swipeHandler callback function to the swipe event on div.box
+    $("#pagina3").on("swipeleft", swiperlefpagina3);
+
+    // Callback function references the event target and adds the 'swipe' class to it
+    function swiperlefpagina3(event) {
+        event.preventDefault();
+        $.mobile.changePage("#pizzas", {
+            transition: "slide",
+            changeHash: false
+        });
+    }
+});
+
+$(function () {
+    // Bind the swipeHandler callback function to the swipe event on div.box
+    $("#pagina3").on("swiperight", swiperrightpagina3);
+
+    // Callback function references the event target and adds the 'swipe' class to it
+    function swiperrightpagina3(event) {
+        event.preventDefault();
+        $.mobile.changePage("#pagina2", {
+            transition: "slide",
+            changeHash: false
+        });
+    }
 });
 
 $("[data-role='collapsible']").collapsible({
@@ -100,4 +124,8 @@ $("[data-role='collapsible']").collapsible({
         $(this).children().next().slideDown(350);
     }
 
+});
+
+$("#elegir").click(function () {
+    $("#aleatorio").removeClass("hidden");
 });
