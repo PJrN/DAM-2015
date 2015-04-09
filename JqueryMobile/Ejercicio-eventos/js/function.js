@@ -22,9 +22,9 @@ $("#elegir").on("click", function () {
 
     var arr = ["Margherita", "Napoli", "Prosciutto", "Prosciutto + Funghi", "Tonno", "Frankfurt", "Pepperoni", "Funghi", "4 formaggi", "Bolognesa", "Vegetariana", "Parmigiana", "Barbakoa", "Brava", "4 stagioni", "Boscaiola", "diFreddy", "Per Tutti", "Potrue", "Difranky", "Mama Mia", "Berezia", "Carbonara", "Siciliana", "Tropikala", "Pesto"];
     shuffle(arr);
-    //console.log(arr);
-    //console.log(arr[0]);
-    $("#decision").text("Pizza: " + arr[0]);
+    console.log(arr);
+    console.log(arr[0]);
+    $("#decision").text(arr[0]);
 
 });
 
